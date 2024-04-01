@@ -1,0 +1,114 @@
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+  }
+  
+  header {
+    background-color: #333;
+    color: #fff;
+    text-align: center;
+    padding: 20px 0;
+  }
+  
+  main {
+    overflow-x: hidden;
+  }
+  
+  .parallax-container {
+    position: relative;
+    height: 400px; /* Adjust the height as needed */
+    overflow: hidden;
+  }
+  
+  .parallax {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: auto;
+    transform: translateZ(0);
+  }
+  
+  .parallax img {
+    width: 100%;
+    height: auto;
+    vertical-align: middle;
+  }
+  
+  .content {
+    padding: 20px;
+    display: flex;
+    justify-content: space-around;
+  }
+  
+  .flip-card {
+    background-color: transparent;
+    width: 300px;
+    height: 400px;
+    perspective: 1000px;
+    margin-bottom: 30px;
+  }
+  
+  .flip-card-inner {
+    width: 100%;
+    height: 100%;
+    text-align: center;
+    transition: transform 0.6s;
+    transform-style: preserve-3d;
+  }
+  
+  .flip-card:hover .flip-card-inner {
+    transform: rotateY(180deg);
+  }
+  
+  .flip-card-front, .flip-card-back {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    backface-visibility: hidden;
+  }
+  
+  .flip-card-front {
+    background-color: #ffc107;
+  }
+  
+  .flip-card-back {
+    background-color: #ff5722;
+    color: #fff;
+    transform: rotateY(180deg);
+  }
+  
+  .flip-card h2 {
+    margin-top: 40%;
+  }
+  
+  .flip-card p {
+    margin: 20px;
+  }
+  
+  /* Your existing CSS styles */
+footer {
+    background-color: #333;
+    color: #fff;
+    padding: 20px 0;
+    text-align: center;
+  }
+  
+  .social-icons a {
+    color: #fff;
+    text-decoration: none;
+    font-size: 24px;
+    margin: 0 10px;
+  }
+  
+  .social-icons a svg {
+    width: 30px;
+    height: 30px;
+    vertical-align: middle;
+  }
+  
+  .social-icons a:hover {
+    color: #ccc;
+  }
+  
